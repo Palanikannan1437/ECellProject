@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/dc62f03753.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- linking bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="CSS/styles.css" rel="stylesheet">
+    <title>Club Project</title>
+
+</head>
+
+  <body>
+    <header>
+        <div class="main__header-div">
+          <svg class="svg1" mlns='http://www.w3.org/2000/svg' viewBox="0 0 64 64">
+          <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="-2.67%" stop-color="#003744" />
+            <stop offset="30.25%" stop-color="#185854" />
+            <stop offset="83.53%" stop-color="#55AD7D" />
+          </linearGradient>
+          </defs>
+          <path d='M0 10 C26 0 38 14 64 4 L64 0 L0 0 Z'  fill="url(#grad)"/>
+        </svg>
+        <nav class="navbar navbar-expand-lg navbar-dark navigation__menu">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse user-options" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Problems</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Get Hired</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">&lt;/&gt;Problem of the day</a>
+                </li>
+              </ul>
+          </div>
+
+          <a class="navbar-brand brand-logo" href="#" tabindex="-1" aria-disabled="true"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 226 226"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="#379A5A"></path><g fill="#ffffff"><path d="M136.70646,113c-0.09888,-1.54904 -0.16479,-3.11221 -0.16479,-4.70833c0,-28.62667 13.46583,-47.08333 32.95833,-47.08333c16.06013,0 29.80375,12.53358 32.95833,32.95833h9.41667l0.00471,-42.375h-9.42137c0,0 -2.50954,7.09075 -4.70833,5.46167c-8.94113,-5.01908 -17.52912,-5.32983 -28.363,-5.32983c-27.30833,0 -51.67867,24.634 -51.67867,55.9915c0,1.71383 0.09888,3.40412 0.23071,5.085h-9.88279c0.13654,-1.68088 0.23542,-3.37117 0.23542,-5.085c0,-31.3575 -24.37033,-55.9915 -51.67867,-55.9915c-10.83387,0 -19.42187,0.30604 -28.363,5.32983c-2.19879,1.62908 -4.70833,-5.46167 -4.70833,-5.46167h-9.42137l0.00471,42.375h9.41667c3.15458,-20.42475 16.89821,-32.95833 32.95833,-32.95833c19.4925,0 32.95833,18.45667 32.95833,47.08333c0,1.59613 -0.06592,3.15929 -0.16479,4.70833h-89.29354v9.41667h4.75071c5.09912,0 9.30837,4.05388 9.41196,9.14829c0.17892,8.69158 1.017,19.12996 4.67067,23.81004c5.97488,7.65104 14.125,14.125 37.66667,14.125c23.64525,0 46.70667,-21.31463 51.79167,-47.08333h9.41667c5.085,25.76871 28.14642,47.08333 51.79167,47.08333c23.54167,0 31.69179,-6.47396 37.66667,-14.125c3.65367,-4.68008 4.49175,-15.11846 4.67067,-23.81004c0.10358,-5.09442 4.31754,-9.14829 9.41196,-9.14829h4.75071v-9.41667zM54.03754,158.81208c-7.55687,0 -19.56312,-0.02825 -21.07921,-8.14542c-0.51321,-2.74496 -0.42846,-11.89796 -0.26837,-19.04992c0.11771,-5.11796 4.294,-9.20008 9.41667,-9.20008h47.35171c-3.73842,22.51054 -18.76271,36.39542 -35.42079,36.39542zM193.04167,150.66667c-1.51608,8.11717 -13.52233,8.14542 -21.07921,8.14542c-16.65337,0 -31.68237,-13.88487 -35.42079,-36.39542h47.35171c5.12267,0 9.29896,4.08213 9.41667,9.20008c0.16008,7.15196 0.24483,16.30496 -0.26837,19.04992z"></path></g></g></svg>
+            <strong class="name">GeeksforGeeks</strong></a>
+          
+          <!-- <button class="brand-button" type="button"><a class="username" href="#">Param Sharma  </a><i class="fas fa-user-circle user-img"></i></button> -->
+          
+          <div class="na-style dropdown">
+            <button onclick="myFunction()" class="na-title dropbtn" type="button">Param Sharma<i class="fas fa-user-circle user-img"></i></button>
+            <ul id="myDropdown" class="na-list dropdown-content">
+              <li><a class="na-anchor">My Profile</a></li>
+              <li><a class="na-anchor">Purchases</a></li>
+              <li><a class="na-anchor">Setting</a></li>
+              <li><a class="na-anchor">My competitions</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+        
+    </header>
+
+    
+
+    <div class="box__search-main">
+      <input id="icon" type="text" placeholder="What would you like to learn?">
+      <button class="button__search"><i class="fas fa-search button__search-icon"></i></button>
+    </div>
+     
+    <!-- Mid Section 1 -->
+    <div class="mid__section-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8 col-sm-12 pricing-column">
+            <div class="card pricing-card">
+              <span class="small__text">Practice>Courses>Complete Interview Preperation With Doubts Assitance</span>
+              <span class="big__text">Complete Interview Preparation With <br>Doubt Assistance</span>
+              <span class="finalyear__people"><i class="material-icons">&#xe7fb;</i><span style="position:relative;bottom:5px;padding-left:10px;">Pre/Final year</span></span>
+              <span class="lifetime__access"><span class="iconify" data-icon="zmdi-ticket-star" data-inline="false"></span><span style="padding-left:10px;">Lifetime access</span></span>
+              <span>Want to cover all the important concepts and topics required for the interviews? Looking to get placement ready before the interviews begin? If yes, then we have the perfect tool for you. With our Complete Interview Preparation (With Doubt Assistance for one year) Course, you'll get access to precise content required for placement preparation, nothing less, nothing more. What's the best part? You get dedicated TAs to solve any doubt that you face. Your 4 years of learning compressed into an extensive course of 6 months!</span>
+              <button class="button__icons1 Wishlist"><span style="position: relative;bottom:4px;padding-right:5px;font-weight:bold;">Wishlist</span><i style='font-size:24px' class='far'>&#xf02e;</i></button>
+              <button class="button__icons1 Share"><span style="position: relative;bottom:5px;padding-right:5px;font-weight:bold;">Share</span><i class="material-icons">&#xe80d;</i></button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 pricing-column">
+            <div class="card youtube-card">
+              <div class="card-body">
+                <div style="text-align:center;margin-bottom:20px;"><iframe width="300" height="200" src="https://www.youtube.com/embed/3gKvYR0P2F0">
+                </iframe>
+              </div>
+                <button class="active__icon" style="height: 25px;background-color:green;position:absolute;right:20px;top:225px;"><i class="material-icons" style="font-size: 15px;position:relative;bottom:2px;">&#xe066;</i> <span style="font-size: 12px;position:relative;bottom:7px;">Active</span></button>
+                <span><i style="color: rgba(255, 38, 0, 0.904); font-size: 30px;" class="fas fa-rupee-sign"></i><span style="color:rgba(255, 38, 0, 0.904);font-size:30px;font-weight:bold;">3000</span></span>
+                <span ><i style="color: grey; font-size: 30px;font-size:10px;" class="fas fa-rupee-sign"></i><span style="text-decoration:line-through;color:grey;font-size:12px">7000</span></span><br>
+                <span style="font-size:12px;font-weight:bold;position:relative;top:15px;">offer ends in <span style="color: rgba(255, 38, 0, 0.904);">23:23:30</span></span>
+              <div style="position: absolute;right:20px;bottom:72px;">
+                <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px">&#xe838;</i>
+                <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px">&#xe838;</i>
+                <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px">&#xe838;</i>
+                <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px">&#xe839;</i>
+                <span style="font-size:8px;position:relative;bottom:3px">69 reviews</span></div>
+              </div>
+              <button class="active__icon" style="text-align: center;height:45px;width:200px;background-color:green;position:absolute;bottom:10px;left:20px;">Register now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mid Section-2 -->
+    <section>
+      <div class="row">
+        <div class="col-lg-8 col-sm-12 pricing-column">
+          <div style="position:relative;top:100px;left:70px;padding-left:25px;padding-right:25px;padding-bottom:25px;width:900px;" class="card course-features">
+            <span class="big__text" style="font-weight:bold;padding-bottom:0px;">Course features</span>
+            <ul style="list-style: none;">
+              <li><span style="font-size:25px;color:#5B5B5B;">200+ algothmic coding problems</span></li>
+              <li><span style="font-size:25px;color:#5B5B5B;">Lifetime access to the Course</span></li>
+              <li><span style="font-size:25px;color:#5B5B5B;">Tract-based learning</span></li>
+              <li><span style="font-size:25px;color:#5B5B5B;">Weekly assessment tests</span></li>
+              <li><span style="font-size:25px;color:#5B5B5B;">Internship Oppurtunities at GeeksforGeeks</span></li>
+              <a class="circle_bullets" style="position:absolute;left:25px;top:77px;"><i style='font-size:24px' class='fas'>&#xf111;</i></a>
+              <a class="circle_bullets" style="position:absolute;left:25px;top:115px;"><i style='font-size:24px' class='fas'>&#xf111;</i></a>
+              <a class="circle_bullets" style="position:absolute;left:25px;top:153px;"><i style='font-size:24px' class='fas'>&#xf111;</i></a>
+              <a class="circle_bullets" style="position:absolute;left:25px;top:191px;"><i style='font-size:24px' class='fas'>&#xf111;</i></a>
+              <a class="circle_bullets" style="position:absolute;left:25px;top:229px;"><i style='font-size:24px' class='fas'>&#xf111;</i></a>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 pricing-column">
+          <div style="position:relative;top:100px;left:35px;width:350px;padding-left:20px;padding-right:20px;" class="card learning-objective">
+            <span class="big__text" style="font-weight:bold;padding-bottom:0px;">What You Will Learn</span>
+            <ul style="list-style: none;">
+              <li><span style="display:inline-block;font-size:25px;color:#5B5B5B;margin-bottom:0px;">Learn Data Structures and Algorithms from basic to advanced level</span></li>
+              <li><span style="display:inline-block;font-size:25px;color:#5B5B5B;margin-bottom:0px;">Learn Topic-wise implementation of different Data Structures & Algorithms</span></li>
+              <li><span style="display:inline-block;font-size:25px;color:#5B5B5B;margin-bottom:0px;">Improve your problem-solving skills to become a stronger developer</span></li>
+              <li><span style="display:inline-block;font-size:25px;color:#5B5B5B;margin-bottom:0px;">Develop your analytical skills on Data Structures and use them efficiently</span></li>
+              <li><span style="display:inline-block;font-size:25px;color:#5B5B5B;margin-bottom:0px;">Solve problems asked in product-based companies’ interviews</span></li>
+              <a class="tick__buttons" style="position:absolute;left:20px;top:82px;"><i style='font-size:24px' class='fas'>&#xf058;</i></a>
+              <a class="tick__buttons" style="position:absolute;left:20px;top:190px;"><i style='font-size:24px' class='fas'>&#xf058;</i></a>
+              <a class="tick__buttons" style="position:absolute;left:20px;top:340px;"><i style='font-size:24px' class='fas'>&#xf058;</i></a>
+              <a class="tick__buttons" style="position:absolute;left:20px;top:450px;"><i style='font-size:24px' class='fas'>&#xf058;</i></a>
+              <a class="tick__buttons" style="position:absolute;left:20px;top:557px;"><i style='font-size:24px' class='fas'>&#xf058;</i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Mid Section 3 -->
+    <section>
+      <div class="row">
+        <div class="col-8 pricing-column5">
+          <div style="position:relative;bottom:250px;left:70px;width:900px;padding-left:25px;padding-right:25px;" class="card course-content">
+            <span class="big__text" style="padding-bottom:17px;">Course content</span>
+            <ul style="list-style: none;">
+              <li class="course__content">Introduction</li>
+              <li class="course__content">Bit magic</li>
+              <li class="course__content">Mathematics</li>
+              <li class="course__content">Recursion</li>
+              <li class="course__content">Arrays</li>
+              <a class="plus__buttons"><i style='font-size:24px;position:absolute;top:96px;left:30px;' class='fas'>&#xf067;</i></a>
+              <a class="plus__buttons"><i style='font-size:24px;position:absolute;top:146px;left:30px;' class='fas'>&#xf067;</i></a>
+              <a class="plus__buttons"><i style='font-size:24px;position:absolute;top:196px;left:30px;' class='fas'>&#xf067;</i></a>
+              <a class="plus__buttons"><i style='font-size:24px;position:absolute;top:246px;left:30px;' class='fas'>&#xf067;</i></a>
+              <a class="plus__buttons"><i style='font-size:24px;position:absolute;top:296px;left:30px;' class='fas'>&#xf067;</i></a>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="FAQ">
+      <div class="row">
+        <div class="col pricing-column5">
+          <div style="position:relative;bottom:170px; left:70px;width:1340px;padding-left: 30px;padding-right:30px;" class="card FAQ">
+            <span class="big__text">FAQ's</span>
+            <div class="na-style dropdown">
+              <button onclick="myFunction1()" class="na-title dropbtn1" type="button">Q. What does Self-Paced mean?<i style= 'margin-left: 862.19px;padding-right:10px;font-size:25px;color: #55AD7D;' class='fas' >&#xf067;</i></button>
+              <ul id="myDropdown1" class="na-list dropdown-content1">
+                <li><a class="na-anchor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a></li>
+              </ul>
+            </div><br>
+            <div class="na-style dropdown">
+              <button onclick="myFunction2()" class="na-title dropbtn1" type="button">Q. Is there any number to contact for any query?<i style= 'margin-left:679.98px;padding-right:10px;font-size:25px;color: #55AD7D;' class='fas' >&#xf067;</i></button>
+              <ul id="myDropdown2" class="na-list dropdown-content1">
+                <li><a class="na-anchor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a></li>
+              </ul>
+            </div><br>
+            <div class="na-style dropdown">
+              <button onclick="myFunction3()" class="na-title dropbtn1" type="button">Q. Does the course include programming questions?<i style= 'margin-left:629.52px;padding-right:10px;font-size:25px;color: #55AD7D;' class='fas' >&#xf067;</i></button>
+              <ul id="myDropdown3" class="na-list dropdown-content1">
+                <li><a class="na-anchor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a></li>
+              </ul>
+            </div><br>
+            <div class="na-style dropdown">
+              <button onclick="myFunction4()" class="na-title dropbtn1" type="button">Q. How long should one student take to complete the course?<i style= 'margin-left:525.72px;padding-right:10px;font-size:25px;color: #55AD7D;' class='fas' >&#xf067;</i></button>
+              <ul id="myDropdown4" class="na-list dropdown-content1">
+                <li><a class="na-anchor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a></li>
+              </ul>
+            </div><br>
+            <div class="na-style dropdown">
+              <button onclick="myFunction5()" class="na-title dropbtn1" type="button">Q. Is there a sample video to see how are the course videos?<i style= 'margin-left:542.23px;padding-right:10px;font-size:25px;color: #55AD7D;' class='fas' >&#xf067;</i></button>
+              <ul id="myDropdown5" class="na-list dropdown-content1">
+                <li><a class="na-anchor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a></li>
+              </ul>
+            </div><br>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+
+
+
+
+    
+    <!-- Review carousel -->
+    <section>
+      <div style="position:relative;bottom:50px;" id="carouselExampleIndicators" class="carousel carousel-dark slide mycarousel" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="anjali__remark d-block w-100">
+              <a class="quote__icon"><i class="fas fa-quote-left"></i></a>
+              <p >Before joining <a class="green__text-link">Interview preperation course</a> , I had less confidence in coding. But after enrolling myself in this course, my confidence level got boosted up. This course has surely helped me to get my basics cleared and improved my coding s....</p>
+              <span ></span><strong>anjaligarg300999</strong></span><br>
+              <span ></span>Placed in Daffodils as a Junior Associate</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="anjali__remark d-block w-100">
+              <a class="quote__icon"><i class="fas fa-quote-left"></i></a>
+              <p >Before joining <a class="green__text-link">DSA preperation course</a> , I had less confidence in coding. But after enrolling myself in this course, my confidence level got boosted up. This course has surely helped me to get my basics cleared and improved my coding s....</p>
+              <span ></span>Gautam</span><br>
+              <span ></span>Placed in Amazon as a Junior Associate</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="anjali__remark d-block w-100">
+              <a class="quote__icon"><i class="fas fa-quote-left"></i></a>
+              <p >Before joining <a class="green__text-link">Interview preperation course</a> , I had less confidence in coding. But after enrolling myself in this course, my confidence level got boosted up. This course has surely helped me to get my basics cleared and improved my coding s....</p>
+              <span ></span>Akash</span><br>
+              <span ></span>Placed in google as a Junior Associate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Card-carousel -->
+    <section class="card__carousel">
+      <div class="text-above-carousel" style="margin: 40px 0px 40px 0px;">
+        <span class="big__text"><span style="color: #55AD7D;">Similar</span> online courses</span><br>
+        <span style="color:#181925;">Select from the various self-paced courses and practice</span><br>
+        <span style="color:#181925;">handpicked problems</span>
+      </div>
+      
+      
+      <div id="carouselExampleIndicators1" class="carousel carousel-dark slide mycarousel1" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100">
+              <div class="row">
+                <div class="col card-1">
+                  <div class="card" style="width: 300px;padding:10px;">
+                    <img src="Images/Interview_Prep.png" class="card-img-top" alt="Interview_Preparation">
+                    <div class="card-body">
+                      <button class="active__icon" style="height: 25px;background-color:green;width:100px;"><i class="material-icons" style="font-size: 15px;position:relative;bottom:2px;right:10px;">&#xe066;</i> <span style="font-size: 12px;position:relative;bottom:7px;">Active</span></button>
+                      <span style="position: absolute;right:15px;"><i style="color: rgba(255, 38, 0, 0.904);font-size:17px;" class="fas fa-rupee-sign"></i><span style="color:rgba(255, 38, 0, 0.904);font-size:20px;font-weight:bolder;">7000</span></span>
+
+                      <h5 class="card-title" style="font-weight:bold;">Complete Interview Preparation</h5>
+                      <span class="finalyear__people1"><i style="font-size: 15px;color:#55AD7D;" class="material-icons">&#xe7fb;</i><span style="font-size:12px;position:relative;bottom:3px;padding-left:3px;color:#55AD7D;">Pre/Final year</span></span>
+                      <span class="lifetime__access1" style="position: absolute;right:20px;bottom:90px;"><span class="iconify" data-icon="zmdi-ticket-star" style="font-size: 12px;color:rgba(255, 38, 0, 0.904);" data-inline="false"></span><span style="font-size:12px;color:rgba(255, 38, 0, 0.904);padding-left:3px;">Lifetime access</span></span>
+                      <hr style="border: solid; color: grey; border-width: 2px;">
+                      <div>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe839;</i>
+                        <span style="font-size:12px;position:relative;bottom:3px;">69 reviews</span>
+                      </div>
+                      <i style="color:#55AD7D; font-size: 30px;position:absolute;right:20px;bottom:22px;" class="fas fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 300px;padding:10px;">
+                    <img src="Images/Interview_Prep2.png" class="card-img-top" alt="Interview_Preparation">
+                    <div class="card-body">
+                      <button class="active__icon" style="height: 25px;background-color:green;width:100px;"><i class="material-icons" style="font-size: 15px;position:relative;bottom:2px;right:10px;">&#xe066;</i> <span style="font-size: 12px;position:relative;bottom:7px;">Active</span></button>
+                      <span style="position: absolute;right:15px;"><i style="color: rgba(255, 38, 0, 0.904);font-size:17px;" class="fas fa-rupee-sign"></i><span style="color:rgba(255, 38, 0, 0.904);font-size:20px;font-weight:bolder;">7000</span></span>
+
+                      <h5 class="card-title" style="font-weight:bold;">Complete Interview Preparation with doubts</h5>
+                      <span class="finalyear__people1"><i style="font-size: 15px;color:#55AD7D;" class="material-icons">&#xe7fb;</i><span style="font-size:12px;position:relative;bottom:3px;padding-left:3px;color:#55AD7D;">Pre/Final year</span></span>
+                      <span class="lifetime__access1" style="position: absolute;right:20px;bottom:90px;"><span class="iconify" data-icon="zmdi-ticket-star" style="font-size: 12px;color:rgba(255, 38, 0, 0.904);" data-inline="false"></span><span style="font-size:12px;color:rgba(255, 38, 0, 0.904);padding-left:3px;">Lifetime access</span></span>
+                      <hr style="border: solid; color: grey; border-width: 2px;">
+                      <div>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe839;</i>
+                        <span style="font-size:12px;position:relative;bottom:3px;">69 reviews</span>
+                      </div>
+                      <i style="color:#55AD7D; font-size: 30px;position:absolute;right:20px;bottom:22px;" class="fas fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 300px;padding:10px;">
+                    <img src="Images/DSA_self_paced.png" class="card-img-top" alt="Interview_Preparation">
+                    <div class="card-body">
+                      <button class="active__icon" style="height: 25px;background-color:green;width:100px;"><i class="material-icons" style="font-size: 15px;position:relative;bottom:2px;right:10px;">&#xe066;</i> <span style="font-size: 12px;position:relative;bottom:7px;">Active</span></button>
+                      <span style="position: absolute;right:15px;"><i style="color: rgba(255, 38, 0, 0.904);font-size:17px;" class="fas fa-rupee-sign"></i><span style="color:rgba(255, 38, 0, 0.904);font-size:20px;font-weight:bolder;">7000</span></span>
+                      <h5 class="card-title" style="font-weight:bold;">DSA-Self Paced with Doubt Assistance</h5>
+                      <span class="finalyear__people1"><i style="font-size: 15px;color:#55AD7D;" class="material-icons">&#xe7fb;</i><span style="font-size:12px;position:relative;bottom:3px;padding-left:3px;color:#55AD7D;">Students</span></span>
+                      <span class="lifetime__access1" style="position: absolute;right:20px;bottom:90px;"><span class="iconify" data-icon="zmdi-ticket-star" style="font-size: 12px;color:rgba(255, 38, 0, 0.904);" data-inline="false"></span><span style="font-size:12px;color:rgba(255, 38, 0, 0.904);padding-left:3px;">Lifetime access</span></span>
+                      <hr style="border: solid; color: grey; border-width: 2px;">
+                      <div>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe839;</i>
+                        <span style="font-size:12px;position:relative;bottom:3px;">69 reviews</span>
+                      </div>
+                      <i style="color:#55AD7D; font-size: 30px;position:absolute;right:20px;bottom:22px;" class="fas fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 300px;padding:10px;">
+                    <img src="Images/DSA_self_paced2.png" class="card-img-top" alt="Interview_Preparation">
+                    <div class="card-body">
+                      <button class="active__icon" style="height: 25px;background-color:green;width:100px;"><i class="material-icons" style="font-size: 15px;position:relative;bottom:2px;right:10px;">&#xe066;</i> <span style="font-size: 12px;position:relative;bottom:7px;">Active</span></button>
+                      <span style="position: absolute;right:15px;"><i style="color: rgba(255, 38, 0, 0.904);font-size:17px;" class="fas fa-rupee-sign"></i><span style="color:rgba(255, 38, 0, 0.904);font-size:20px;font-weight:bolder;">7000</span></span>
+
+                      <h5 class="card-title" style="font-weight:bold;">Data Structures and Algorithms</h5>
+                      <span class="finalyear__people1"><i style="font-size: 15px;color:#55AD7D;" class="material-icons">&#xe7fb;</i><span style="font-size:12px;position:relative;bottom:3px;padding-left:3px;color:#55AD7D;">Students</span></span>
+                      <span class="lifetime__access1" style="position: absolute;right:20px;bottom:90px;"><span class="iconify" data-icon="zmdi-ticket-star" style="font-size: 12px;color:rgba(255, 38, 0, 0.904);" data-inline="false"></span><span style="font-size:12px;color:rgba(255, 38, 0, 0.904);padding-left:3px;">Lifetime access</span></span>
+                      <hr style="border: solid; color: grey; border-width: 2px;">
+                      <div>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe839;</i>
+                        <span style="font-size:12px;position:relative;bottom:3px;">69 reviews</span>
+                      </div>
+                      <i style="color:#55AD7D; font-size: 30px;position:absolute;right:20px;bottom:22px;" class="fas fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100">
+              <div class="row">
+                <div class="col card-1">
+                  <div class="card" style="width: 300px;padding:10px;">
+                    <img src="Images/Interview_Prep.png" class="card-img-top" alt="Interview_Preparation">
+                    <div class="card-body">
+                      <button class="active__icon" style="height: 25px;background-color:green;width:100px;"><i class="material-icons" style="font-size: 15px;position:relative;bottom:2px;right:10px;">&#xe066;</i> <span style="font-size: 12px;position:relative;bottom:7px;">Active</span></button>
+                      <span style="position: absolute;right:15px;"><i style="color: rgba(255, 38, 0, 0.904);font-size:17px;" class="fas fa-rupee-sign"></i><span style="color:rgba(255, 38, 0, 0.904);font-size:20px;font-weight:bolder;">7000</span></span>
+
+                      <h5 class="card-title">Complete Interview Preparation</h5>
+                      <span class="finalyear__people1"><i style="font-size: 15px;color:#55AD7D;" class="material-icons">&#xe7fb;</i><span style="font-size:12px;position:relative;bottom:3px;padding-left:3px;color:#55AD7D;">Students</span></span>
+                      <span class="lifetime__access1" style="position: absolute;right:20px;bottom:90px;"><span class="iconify" data-icon="zmdi-ticket-star" style="font-size: 12px;color:rgba(255, 38, 0, 0.904);" data-inline="false"></span><span style="font-size:12px;color:rgba(255, 38, 0, 0.904);padding-left:3px;">Lifetime access</span></span>
+                      <hr style="border: solid; color: grey; border-width: 2px;">
+                      <div>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                        <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe839;</i>
+                        <span style="font-size:12px;position:relative;bottom:3px;">69 reviews</span>
+                      </div>
+                      <i style="color:#55AD7D; font-size: 30px;position:absolute;right:20px;bottom:22px;" class="fas fa-chevron-circle-right"></i>        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100">
+              <div class="col">
+                <div class="card" style="width: 300px;padding:10px;">
+                  <img src="Images/DSA_self_paced2.png" class="card-img-top" alt="Interview_Preparation">
+                  <div class="card-body">
+                    <button class="active__icon" style="height: 25px;background-color:green;width:100px;"><i class="material-icons" style="font-size: 15px;position:relative;bottom:2px;right:10px;">&#xe066;</i> <span style="font-size: 12px;position:relative;bottom:7px;">Active</span></button>
+                    <span style="position: absolute;right:15px;"><i style="color: rgba(255, 38, 0, 0.904);font-size:17px;" class="fas fa-rupee-sign"></i><span style="color:rgba(255, 38, 0, 0.904);font-size:20px;font-weight:bolder;">7000</span></span>
+
+                    <h5 class="card-title">Data Structures and Algorithms</h5>
+                    <span class="finalyear__people1"><i style="font-size: 15px;color:#55AD7D;" class="material-icons">&#xe7fb;</i><span style="font-size:12px;position:relative;bottom:3px;padding-left:3px;color:#55AD7D;">Students</span></span>
+                    <span class="lifetime__access1" style="position: absolute;right:20px;bottom:90px;"><span class="iconify" data-icon="zmdi-ticket-star" style="font-size: 12px;color:rgba(255, 38, 0, 0.904);" data-inline="false"></span><span style="font-size:12px;color:rgba(255, 38, 0, 0.904);padding-left:3px;">Lifetime access</span></span>
+                    <hr style="border: solid; color: grey; border-width: 2px;">
+                    <div>
+                      <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                      <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                      <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                      <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe838;</i>
+                      <i class="material-icons" style="color:rgb(255, 123, 0);font-size:15px;">&#xe839;</i>
+                      <span style="font-size:12px;position:relative;bottom:3px;">69 reviews</span>
+                    </div>
+                    <i style="color:#55AD7D; font-size: 30px;position:absolute;right:20px;bottom:22px;" class="fas fa-chevron-circle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev card__carousel-left" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          
+          <button class="carousel-control-next card__carousel-right" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+          
+        </class>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__main">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 226 226" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="#6aa880"></path><g fill="#ffffff"><path d="M136.70646,113c-0.09888,-1.54904 -0.16479,-3.11221 -0.16479,-4.70833c0,-28.62667 13.46583,-47.08333 32.95833,-47.08333c16.06013,0 29.80375,12.53358 32.95833,32.95833h9.41667l0.00471,-42.375h-9.42137c0,0 -2.50954,7.09075 -4.70833,5.46167c-8.94113,-5.01908 -17.52912,-5.32983 -28.363,-5.32983c-27.30833,0 -51.67867,24.634 -51.67867,55.9915c0,1.71383 0.09888,3.40412 0.23071,5.085h-9.88279c0.13654,-1.68088 0.23542,-3.37117 0.23542,-5.085c0,-31.3575 -24.37033,-55.9915 -51.67867,-55.9915c-10.83387,0 -19.42187,0.30604 -28.363,5.32983c-2.19879,1.62908 -4.70833,-5.46167 -4.70833,-5.46167h-9.42137l0.00471,42.375h9.41667c3.15458,-20.42475 16.89821,-32.95833 32.95833,-32.95833c19.4925,0 32.95833,18.45667 32.95833,47.08333c0,1.59613 -0.06592,3.15929 -0.16479,4.70833h-89.29354v9.41667h4.75071c5.09912,0 9.30837,4.05388 9.41196,9.14829c0.17892,8.69158 1.017,19.12996 4.67067,23.81004c5.97488,7.65104 14.125,14.125 37.66667,14.125c23.64525,0 46.70667,-21.31463 51.79167,-47.08333h9.41667c5.085,25.76871 28.14642,47.08333 51.79167,47.08333c23.54167,0 31.69179,-6.47396 37.66667,-14.125c3.65367,-4.68008 4.49175,-15.11846 4.67067,-23.81004c0.10358,-5.09442 4.31754,-9.14829 9.41196,-9.14829h4.75071v-9.41667zM54.03754,158.81208c-7.55687,0 -19.56312,-0.02825 -21.07921,-8.14542c-0.51321,-2.74496 -0.42846,-11.89796 -0.26837,-19.04992c0.11771,-5.11796 4.294,-9.20008 9.41667,-9.20008h47.35171c-3.73842,22.51054 -18.76271,36.39542 -35.42079,36.39542zM193.04167,150.66667c-1.51608,8.11717 -13.52233,8.14542 -21.07921,8.14542c-16.65337,0 -31.68237,-13.88487 -35.42079,-36.39542h47.35171c5.12267,0 9.29896,4.08213 9.41667,9.20008c0.16008,7.15196 0.24483,16.30496 -0.26837,19.04992z"></path></g></g></svg><strong class="name">GeeksforGeeks</strong><br><br>
+            <i class="fas fa-map-marker-alt marker"></i>
+            <a class="address">5th Floor, A-118,</a><br>
+            <a class="address address__down">Sector-136, Noida, Uttar</a><br>
+            <a class="address address__down">Pradesh - 201305</a><br>
+            <i class="material-icons messaging__icon">&#xe0c9;</i>
+            <a href="mailto:feedback@geeksforgeeks.org" class="message">feedback@geeksforgeeks.org</a><br>
+          </div>
+          <div class="col-lg-2 col-sm-12">
+            <a href = "#" class="footer__headings">Company</a><br><br>
+            <a href = "#" class="footer__headings-sub">About us</a><br>
+            <a href = "#" class="footer__headings-sub">Careers</a><br>
+            <a href = "#" class="footer__headings-sub">Privavy policy</a><br>
+            <a href = "#" class="footer__headings-sub">Contact us</a><br>
+            <a href = "#" class="footer__headings-sub">Terms of service</a><br>
+          </div>
+          <div class="col-lg-2 col-sm-12">
+            <a href = "#" class="footer__headings">Learn</a><br><br>
+            <a href = "#" class="footer__headings-sub">Algorithms</a><br>
+            <a href = "#" class="footer__headings-sub">Data structures</a><br>
+            <a href = "#" class="footer__headings-sub">Languages</a><br>
+            <a href = "#" class="footer__headings-sub">CS subjects</a><br>
+            <a href = "#" class="footer__headings-sub">Video tutorials</a><br>
+          </div>
+          <div class="col-lg-2 col-sm-12">
+            <a href = "#" class="footer__headings">Practice</a><br><br>
+            <a href = "#" class="footer__headings-sub">Courses</a><br>
+            <a href = "#" class="footer__headings-sub">Company-wise</a><br>
+            <a href = "#" class="footer__headings-sub">Topic-wise</a><br>
+            <a href = "#" class="footer__headings-sub">How to begin?</a><br>
+          </div>
+          <div class="col-lg-2 col-sm-12">
+            <a href = "#" class="footer__headings">Contribute</a><br><br>
+            <a href = "#" class="footer__headings-sub">Write an Article</a><br>
+            <a href = "#" class="footer__headings-sub">Wrtie an experience</a><br>
+            <a href = "#" class="footer__headings-sub">Internships</a><br>
+            <a href = "#" class="footer__headings-sub">Videos</a><br>
+          </div>
+        </div>
+        <div class="social__media">
+          <i class="fab fa-facebook icons__socialmedia"></i>
+          <i class="fab fa-twitter-square icons__socialmedia"></i>
+          <i class="fab fa-instagram icons__socialmedia"></i>
+          <i class="fab fa-linkedin icons__socialmedia"></i>
+        </div>
+      </div>
+
+      <div class="footer__sub">
+        <span class="footer__sub-text">@geeksforgeeks, All rights reserved</span>
+      </div>
+      
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
